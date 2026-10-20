@@ -1,16 +1,36 @@
 :root {
-  --ink: #12366b;
-  --deep: #082653;
-  --cream: #fff9e8;
-  --paper: #fffefa;
-  --coral: #1769d2;
-  --gold: #f5bd27;
-  --mint: #a9d5ff;
-  --sage: #fff0af;
-  --line: rgba(18, 54, 107, 0.16);
+  --ink: #082849;
+  --deep: #041d37;
+  --cream: #fffaf0;
+  --paper: #ffffff;
+  --coral: #e5a400;
+  --gold: #f6b511;
+  --mint: #dceaf5;
+  --sage: #fff0bc;
+  --line: rgba(8, 40, 73, 0.16);
 }
 
-.nav-wrap { background: rgba(255, 249, 232, 0.9); }
+body, .button, .program, .contact-form input,
+.contact-form select, .contact-form textarea {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, .step h3, .role h3, .quote blockquote,
+.brand, .trust-row b, .program {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2 { font-weight: 800; letter-spacing: -0.055em; }
+h1 em, h2 em { font-style: normal; color: var(--gold); }
+.brand { font-weight: 800; letter-spacing: -0.045em; }
+.brand strong { color: var(--ink); }
+.brand b { color: var(--gold); font-weight: 800; }
+.brand small { display: block; margin-top: -4px; font-size: 8px; font-weight: 600; letter-spacing: .34em; text-transform: uppercase; color: var(--ink); }
+.brand-mark { border-color: var(--ink); background: white; }
+.brand-mark span { color: var(--gold); }
+.brand.light strong, .brand.light small { color: white; }
+
+.nav-wrap { background: rgba(255, 255, 255, 0.94); }
 .lede, .section-lede, .step p, .role p,
 .program-copy > p:not(.eyebrow), .program small,
 .centered p:last-child, .contact-copy > p:last-child {
@@ -19,13 +39,16 @@
 .trust-row, .form-note { color: #667b9d; }
 .button { box-shadow: 0 8px 0 rgba(18, 54, 107, 0.14); }
 .button:hover { box-shadow: 0 10px 0 rgba(18, 54, 107, 0.18); }
+.hero-art { display: grid; place-items: center; }
+.brand-logo-hero { position: relative; z-index: 7; width: min(100%, 570px); border-radius: 28px; box-shadow: 0 30px 80px rgba(8, 40, 73, .13); }
+.hero-art .portrait, .hero-art .orbit, .hero-art .note, .hero-art .spark { display: none; }
 .portrait { box-shadow: 18px 20px 0 #ffe88e; }
 .hair { background: #092654; }
 .note { box-shadow: 0 12px 30px rgba(18, 54, 107, 0.14); }
 .paper { box-shadow: 12px 15px 0 rgba(18, 54, 107, 0.13); }
-.student { background: #d9eaff; color: #1769d2; }
+.student { background: #e5eef7; color: #082849; }
 .parent { background: #fff0ad; color: #a56e00; }
-.tutor { background: #cfe7ff; color: #0d5fbd; }
+.tutor { background: #d9e8f4; color: #082849; }
 .manager { background: #ffe58a; color: #765000; }
 .role:hover { box-shadow: 0 14px 35px rgba(18, 54, 107, 0.1); }
 .contact-form input:focus,
@@ -33,6 +56,6 @@
 .contact-form textarea:focus {
   box-shadow: 0 0 0 3px rgba(23, 105, 210, 0.14);
 }
-footer { background: #082653; }
+footer { background: #041d37; }
 footer p { color: #bdd3f1; }
 footer small { color: #8faacf; }
